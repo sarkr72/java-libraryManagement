@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminSearchBook">
+   <children>
+      <HBox alignment="CENTER" layoutX="1.0" layoutY="87.0" prefHeight="20.0" prefWidth="650.0" spacing="20.0">
+         <children>
+            <TextField fx:id="searchField" prefHeight="17.0" prefWidth="238.0" promptText="Search" />
+            <Button fx:id="sesarchBtn" mnemonicParsing="false" prefHeight="9.0" prefWidth="84.0" text="SEARCH" />
+         </children>
+      </HBox>
+      <Label layoutX="6.0" layoutY="111.0" prefHeight="17.0" prefWidth="195.0" text="Available Books:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="351.0" prefHeight="8.0" prefWidth="195.0" text="Reading History:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="285.0" layoutY="350.0" mnemonicParsing="false" onAction="#borrow" prefHeight="25.0" prefWidth="73.0" text="Borrow" />
+      <Button layoutX="296.0" layoutY="596.0" mnemonicParsing="false" onAction="#returnBook" prefHeight="23.0" prefWidth="73.0" text="Return" />
+      <Label fx:id="label" layoutX="218.0" layoutY="112.0" prefHeight="20.0" prefWidth="238.0" textFill="#e11439" />
+      <Button layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#goToAdminLoggedIn" prefHeight="12.0" prefWidth="65.0" text="Back" />
+      <Button layoutX="578.0" mnemonicParsing="false" onAction="#goToAdminProfile" prefHeight="27.0" prefWidth="73.0" text="Profile" />
+      <TableView fx:id="availableTableV" layoutX="4.0" layoutY="132.0" prefHeight="215.0" prefWidth="643.0">
+        <columns>
+          <TableColumn fx:id="title1" prefWidth="220.0" text="Title" />
+          <TableColumn fx:id="isbn1" prefWidth="180.0" text="Isbn" />
+            <TableColumn prefWidth="147.0" text="Author">
+               <columns>
+                  <TableColumn fx:id="firstN1" prefWidth="110.0" text="First Name" />
+                  <TableColumn fx:id="lastN1" prefWidth="110.0" text="Last Name" />
+               </columns>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="historyTableV" layoutX="1.0" layoutY="378.0" prefHeight="215.0" prefWidth="650.0">
+         <columns>
+            <TableColumn fx:id="title2" prefWidth="182.0" text="Title" />
+            <TableColumn fx:id="isbn2" prefWidth="140.0" text="Isbn" />
+            <TableColumn prefWidth="147.0" text="Author">
+               <columns>
+                  <TableColumn fx:id="firstN2" text="First Name" />
+                  <TableColumn fx:id="lastN2" text="Last Name" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="borrowTime2" minWidth="4.0" prefWidth="83.0" text="Borrowed" />
+            <TableColumn fx:id="dueDate" prefWidth="75.0" text="Return By" />
+         </columns>
+      </TableView>
+      <Label layoutX="4.0" layoutY="33.0" prefHeight="25.0" prefWidth="73.0" text="Overdue Fee:" />
+      <Label fx:id="feeLabel" layoutX="77.0" layoutY="33.0" prefHeight="25.0" prefWidth="84.0" />
+      <TextField fx:id="searchHistory" layoutX="138.0" layoutY="350.0" prefHeight="25.0" prefWidth="146.0" promptText="search History" />
+   </children>
+</AnchorPane>

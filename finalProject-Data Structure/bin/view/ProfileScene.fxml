@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileController">
+   <children>
+      <TextField fx:id="passwordField" disable="true" editable="false" layoutX="159.0" layoutY="496.0" prefHeight="35.0" prefWidth="418.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextArea fx:id="addressArea" disable="true" editable="false" layoutX="159.0" layoutY="256.0" prefHeight="102.0" prefWidth="418.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextArea>
+      <TextField fx:id="lastNameF" disable="true" editable="false" layoutX="159.0" layoutY="211.0" prefHeight="35.0" prefWidth="418.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="userNameField" disable="true" editable="false" layoutX="155.0" layoutY="441.0" prefHeight="35.0" prefWidth="418.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Button mnemonicParsing="false" onAction="#goToLoggedIn" prefHeight="38.0" prefWidth="107.0" text="Back" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="29.0" layoutY="206.0" prefHeight="38.0" prefWidth="126.0" text="LAST NAME:" />
+      <Label alignment="CENTER_RIGHT" layoutX="30.0" layoutY="288.0" prefHeight="38.0" prefWidth="126.0" text="ADDRESS:" />
+      <Label alignment="CENTER_RIGHT" layoutX="58.0" layoutY="498.0" prefHeight="35.0" prefWidth="98.0" text="PASSWORD:" />
+      <Label layoutX="88.0" layoutY="441.0" prefHeight="35.0" prefWidth="67.0" text="USERNAME:" />
+      <ImageView fx:id="imageView" fitHeight="179.0" fitWidth="240.0" layoutX="227.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="266.0" layoutY="138.0" mnemonicParsing="false" onAction="#addProfilePic" prefHeight="25.0" prefWidth="162.0" text="Change/Add profile Picture" />
+      <Button layoutX="479.0" layoutY="2.0" mnemonicParsing="false" onAction="#editProfile" prefHeight="35.0" prefWidth="107.0" text="Edit Profie" />
+      <TextField fx:id="phoneField" disable="true" editable="false" layoutX="159.0" layoutY="378.0" prefHeight="38.0" prefWidth="418.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Label layoutX="78.0" layoutY="378.0" prefHeight="35.0" prefWidth="82.0" text="Phone number:" />
+      <TextField fx:id="firsrNameF" disable="true" editable="false" layoutX="160.0" layoutY="169.0" prefHeight="35.0" prefWidth="418.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="31.0" layoutY="168.0" prefHeight="38.0" prefWidth="126.0" text="FIRST NAME:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAdminAccountC">
+   <children>
+      <TextField fx:id="lastNameF" layoutX="122.0" layoutY="101.0" prefHeight="25.0" prefWidth="290.0" promptText="Last Name" />
+      <Label layoutX="154.0" layoutY="25.0" prefHeight="25.0" prefWidth="243.0" text="CREATE YOUR ACCOUNT">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="178.0" layoutY="51.0" prefHeight="19.0" prefWidth="201.0" text="Enter your information:" />
+      <TextField fx:id="passwordField" layoutX="122.0" layoutY="322.0" prefHeight="25.0" prefWidth="290.0" promptText="Password" />
+      <TextField fx:id="userNameField" layoutX="122.0" layoutY="275.0" prefHeight="25.0" prefWidth="290.0" promptText="Username" />
+      <TextField fx:id="phoneField" layoutX="122.0" layoutY="220.0" prefHeight="25.0" prefWidth="290.0" promptText="Phone Number" />
+      <TextField fx:id="zipField" layoutX="317.0" layoutY="178.0" prefHeight="25.0" prefWidth="95.0" promptText="Zip Code" />
+      <TextField fx:id="townField" layoutX="122.0" layoutY="178.0" prefHeight="25.0" prefWidth="182.0" promptText="Town/City" />
+      <TextField fx:id="streetField" layoutX="122.0" layoutY="135.0" prefHeight="25.0" prefWidth="290.0" promptText="Street/Rd" />
+      <Label fx:id="zipLabel" layoutX="320.0" layoutY="203.0" prefHeight="17.0" prefWidth="103.0" textFill="#f82b24" />
+      <Label fx:id="phoneLabel" layoutX="122.0" layoutY="252.0" prefHeight="17.0" prefWidth="290.0" textFill="#f81111" />
+      <Label fx:id="userNameLabel" layoutX="122.0" layoutY="300.0" prefHeight="17.0" prefWidth="290.0" textFill="#f53d3d" />
+      <Label fx:id="passwordLabel" layoutX="122.0" layoutY="347.0" prefHeight="17.0" prefWidth="290.0" textFill="#e31025" />
+      <Button layoutX="300.0" layoutY="417.0" mnemonicParsing="false" onAction="#applyForCard" prefHeight="30.0" prefWidth="64.0" text="SUBMIT">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow height="18.03" radius="26.3075" width="89.2" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="287.79" color="#9f6eb8fc" elevation="70.12" />
+               </light>
+            </Lighting>
+         </effect></Button>
+      <Button layoutX="213.0" layoutY="417.0" mnemonicParsing="false" onAction="#addImage" prefHeight="30.0" prefWidth="75.0" text="Add Image">
+         <effect>
+            <DropShadow color="#872a97" height="47.69" radius="23.345" spread="0.12" width="47.69" />
+         </effect></Button>
+      <ImageView fx:id="imageView" fitHeight="98.0" fitWidth="128.0" layoutX="1.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="2.0" layoutY="2.0" mnemonicParsing="false" onAction="#goToLoggedIn" prefHeight="25.0" prefWidth="52.0" text="Back" />
+      <TextField fx:id="firstNameF" layoutX="122.0" layoutY="69.0" prefHeight="25.0" prefWidth="290.0" promptText="First Name" />
+      <ImageView fx:id="imageView" fitHeight="104.0" fitWidth="152.0" layoutX="51.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="picLabel" layoutX="65.0" layoutY="358.0" prefHeight="25.0" prefWidth="119.0" textFill="#da0712" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="pane" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageController">
+   <children>
+      <VBox prefHeight="178.0" prefWidth="600.0">
+         <children>
+            <ImageView disable="true" fitHeight="183.0" fitWidth="597.0" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+               <image>
+                  <Image url="@../controller/librarypic.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin></ImageView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <MenuBar prefHeight="28.0" prefWidth="603.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                            <MenuItem fx:id="item" mnemonicParsing="false" onAction="#sceneChangeToApply" text="CREATE ACCOUNT" />
+                            <MenuItem mnemonicParsing="false" onAction="#sceneChangeToLogIn" text="SIGN IN" />
+                              <MenuItem mnemonicParsing="false" onAction="#goToAdmin" text="Admin" />
+                              <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit" />
+                      <Menu mnemonicParsing="false" text="Help" />
+                    </menus>
+                  </MenuBar>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

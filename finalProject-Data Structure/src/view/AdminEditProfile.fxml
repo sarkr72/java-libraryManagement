@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminEditProfileC">
+   <children>
+      <Button layoutX="6.0" layoutY="2.0" mnemonicParsing="false" onAction="#goToProfile" prefHeight="35.0" prefWidth="88.0" text="Profile Home" />
+      <Label layoutX="14.0" layoutY="51.0" prefHeight="41.0" prefWidth="327.0" text="Edit your profile:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox fillWidth="false" layoutX="14.0" layoutY="83.0" prefHeight="353.0" prefWidth="525.0" spacing="10.0">
+         <children>
+            <TextField fx:id="firstNameF" prefHeight="25.0" prefWidth="338.0" promptText="first Name" />
+            <TextField fx:id="lastNameF" prefHeight="37.0" prefWidth="335.0" promptText="Last Name" />
+            <TextField fx:id="phoneF" prefHeight="37.0" prefWidth="335.0" promptText="Phone Number:" />
+            <Label fx:id="phone" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="336.0" textFill="#eb0a28" />
+            <TextField fx:id="streetF" prefHeight="37.0" prefWidth="335.0" promptText="Street/Rd" />
+            <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="339.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="townF" prefHeight="37.0" prefWidth="212.0" promptText="Town/City" />
+                  <TextField fx:id="zipF" prefHeight="37.0" prefWidth="118.0" promptText="Zip Code'" />
+               </children>
+            </HBox>
+            <Label fx:id="zipLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="336.0" textFill="#eb0a28" VBox.vgrow="ALWAYS" />
+            <TextField fx:id="passwordF" prefHeight="37.0" prefWidth="335.0" promptText="Password" />
+            <Label fx:id="passwordLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="336.0" textFill="#eb0a28" />
+         </children>
+      </VBox>
+      <Button layoutX="152.0" layoutY="442.0" mnemonicParsing="false" onAction="#goToLogInScene" text="SUBMIT" />
+   </children>
+</AnchorPane>

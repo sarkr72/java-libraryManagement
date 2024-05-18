@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="652.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateAccountController">
+   <children>
+      <Label alignment="CENTER" layoutX="118.0" prefHeight="17.0" prefWidth="310.0" text="CREATE A NEW ACCOUNT">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="60.0" prefHeight="441.0" prefWidth="450.0" spacing="10.0">
+         <children>
+            <TextField fx:id="firstNameF" prefHeight="28.0" prefWidth="450.0" promptText="First Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="lastNameF" prefHeight="30.0" prefWidth="450.0" promptText="Last Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="addressField" prefHeight="34.0" prefWidth="450.0" promptText="Street/Rd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="49.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="townField" prefHeight="34.0" prefWidth="296.0" promptText="Town/City">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="zipField" alignment="TOP_LEFT" prefHeight="37.0" prefWidth="145.0" promptText="Zip Code">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <Label fx:id="zipLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="463.0" />
+            <TextField fx:id="phoneField" prefHeight="37.0" prefWidth="450.0" promptText="Phone: # (xxx-xxx-xxxx)">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <Label fx:id="phoneLabel" prefHeight="17.0" prefWidth="396.0" />
+            <TextField fx:id="emailAddField" prefHeight="37.0" prefWidth="450.0" promptText="Username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="userNameLabel" prefHeight="17.0" prefWidth="452.0" />
+            <TextField fx:id="passwordField" prefHeight="30.0" prefWidth="450.0" promptText="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="passwordLabel" prefHeight="17.0" prefWidth="442.0" />
+            <Label fx:id="picLabel" prefHeight="17.0" prefWidth="221.0" textFill="#f50c0c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="472.0" prefHeight="75.0" prefWidth="450.0" spacing="20.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="70.0" fitWidth="118.0" pickOnBounds="true" preserveRatio="true" />
+            <Button mnemonicParsing="false" onAction="#addImage" text="Add Profile Pic" />
+            <Button mnemonicParsing="false" onAction="#applyForCard" text="SUBMIT" />
+         </children>
+      </HBox>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="33.0" text="Enter Your Information:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="488.0" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="33.0" prefWidth="95.0" text="Home" />
+   </children>
+</AnchorPane>
